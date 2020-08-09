@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -90,7 +90,7 @@
 /* Begin PBXFileReference section */
 		6442F64E1C1FC3AA00C9152F /* XLFormImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFormImageCell.h; sourceTree = "<group>"; };
 		6442F64F1C1FC3AA00C9152F /* XLFormImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFormImageCell.m; sourceTree = "<group>"; };
-		E267FD201BE8048900F86B42 /* XLForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E267FD201BE8048900F86B42 /* CCTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E267FD251BE8048900F86B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E267FD2C1BE804E200F86B42 /* XLFormBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFormBaseCell.h; sourceTree = "<group>"; };
 		E267FD2D1BE804E200F86B42 /* XLFormBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFormBaseCell.m; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		E267FD211BE8048900F86B42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E267FD201BE8048900F86B42 /* XLForm.framework */,
+				E267FD201BE8048900F86B42 /* CCTable.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -390,9 +390,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E267FD1F1BE8048900F86B42 /* XLForm */ = {
+		E267FD1F1BE8048900F86B42 /* CCTable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E267FD281BE8048900F86B42 /* Build configuration list for PBXNativeTarget "XLForm" */;
+			buildConfigurationList = E267FD281BE8048900F86B42 /* Build configuration list for PBXNativeTarget "CCTable" */;
 			buildPhases = (
 				E267FD1B1BE8048900F86B42 /* Sources */,
 				E267FD1C1BE8048900F86B42 /* Frameworks */,
@@ -403,9 +403,9 @@
 			);
 			dependencies = (
 			);
-			name = XLForm;
+			name = CCTable;
 			productName = XLForm;
-			productReference = E267FD201BE8048900F86B42 /* XLForm.framework */;
+			productReference = E267FD201BE8048900F86B42 /* CCTable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -414,19 +414,21 @@
 		E267FD171BE8048900F86B42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CC;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = XLForm;
+				ORGANIZATIONNAME = CCTable;
 				TargetAttributes = {
 					E267FD1F1BE8048900F86B42 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
 			};
-			buildConfigurationList = E267FD1A1BE8048900F86B42 /* Build configuration list for PBXProject "XLForm" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = E267FD1A1BE8048900F86B42 /* Build configuration list for PBXProject "CCTable" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = E267FD161BE8048900F86B42;
@@ -434,7 +436,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E267FD1F1BE8048900F86B42 /* XLForm */,
+				E267FD1F1BE8048900F86B42 /* CCTable */,
 			);
 		};
 /* End PBXProject section */
@@ -609,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 5.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -616,7 +619,7 @@
 				INFOPLIST_FILE = XLForm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.XLForm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.CCTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -626,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 5.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -633,7 +637,7 @@
 				INFOPLIST_FILE = XLForm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.XLForm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.CCTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -642,7 +646,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E267FD1A1BE8048900F86B42 /* Build configuration list for PBXProject "XLForm" */ = {
+		E267FD1A1BE8048900F86B42 /* Build configuration list for PBXProject "CCTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E267FD261BE8048900F86B42 /* Debug */,
@@ -651,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E267FD281BE8048900F86B42 /* Build configuration list for PBXNativeTarget "XLForm" */ = {
+		E267FD281BE8048900F86B42 /* Build configuration list for PBXNativeTarget "CCTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E267FD291BE8048900F86B42 /* Debug */,
