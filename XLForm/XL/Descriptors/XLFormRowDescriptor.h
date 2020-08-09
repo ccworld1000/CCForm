@@ -29,7 +29,7 @@
 #import "XLFormValidatorProtocol.h"
 #import "XLFormValidationStatus.h"
 
-extern CGFloat XLFormUnspecifiedCellHeight;
+FOUNDATION_EXPORT CGFloat XLFormUnspecifiedCellHeight;
 
 @class XLFormViewController;
 @class XLFormSectionDescriptor;

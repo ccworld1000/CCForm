@@ -27,8 +27,8 @@
 #import "XLFormBaseCell.h"
 #import <UIKit/UIKit.h>
 
-extern NSString *const XLFormTextViewLengthPercentage;
-extern NSString *const XLFormTextViewMaxNumberOfCharacters;
+FOUNDATION_EXPORT NSString *const XLFormTextViewLengthPercentage;
+FOUNDATION_EXPORT NSString *const XLFormTextViewMaxNumberOfCharacters;
 
 @interface XLFormTextViewCell : XLFormBaseCell
 
